@@ -1,0 +1,29 @@
+{
+  "name": "Affinity Tracker",
+  "version": "1.0",
+  "description": "Affinity tracker for Dynamic Yield code challenge",
+  "manifest-version": 2,
+  "content-scripts":[
+    {
+      "matches": [
+        "https://www.urbanoutfitters.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["activeTab", "storage"],
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/img16.png",
+      "32": "images/img32.png"
+    }
+  },
+  "icons": {
+    "16": "assets/img16.png",
+    "32": "assets/img32.png"
+  }
+}
