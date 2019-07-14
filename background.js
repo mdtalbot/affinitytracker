@@ -16,19 +16,24 @@ document.addEventListener('DOMContentLoaded', categoryCheck(), false)
 categoryCheck = () => {
   switch (utag_data.product_category[0]) {
     case "mens-clothing":
-      chrome.storage.local.set({CSE_Challenge.mens += 1})
+      chrome.storage.local.set(
+        CSE_Challenge.mens += 1)
       break;
     case "womens-clothing":
-      chrome.storage.local.set({ CSE_Challenge.womens += 1 })
+      chrome.storage.local.set(
+        CSE_Challenge.womens += 1)
       break;
     case "lifestyle":
-      chrome.storage.local.set({ CSE_Challenge.lifestyle += 1 })
+      chrome.storage.local.set(
+        CSE_Challenge.lifestyle += 1)
       break;
     case "beauty-products":
-      chrome.storage.local.set({ CSE_Challenge.beauty += 1 })
+      chrome.storage.local.set(
+        CSE_Challenge.beauty += 1)
       break;
     case "home":
-      chrome.storage.local.set({ CSE_Challenge.home += 1 })
+      chrome.storage.local.set(
+        CSE_Challenge.home += 1)
       break;
     default:
 
