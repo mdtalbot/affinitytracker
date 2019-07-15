@@ -8,13 +8,22 @@
     </h1>
   </div>
   <div class="modal-content">
-    <div class="affinity-wrapper">
-      <ul class="affinity-list">
+    <div id="affinity-wrapper">
+      <ul id="affinity-list">
         <script>
           let affinityList = document.getElementsByClassName('affinity-list')
           let affinityValues = chrome.storage.local.get('CSE_Challenge', function(data){
             Object.keys(data).sort(function(a,b) {return obj[a]-obj[b]})
           })
+
+          function appendVals(affinityValues){
+            for(item in affinityValues){
+              var li=document.createElement("li");
+              var text=document.createTextNode(item);
+              li.appendChild(text);
+              document.getElementById("affinity-list").appendChild(li);
+            }
+          }
 
         </script>
 
@@ -22,7 +31,5 @@
 
     </div>
   </div>
-
-<body> <button></button> </body>
 
 </html>
