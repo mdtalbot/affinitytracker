@@ -3,7 +3,11 @@ document.addEventListener("DOMContentLoaded",sortPageByAffinity(),false)
 const tempAffinity={}
 const sortedAffinity={}
 const wrapper = document.getElementsByClassName('dom-landing-page-modules')
-const productRows = document.querySelectorAll('[data-qa-module-length]')
+const womens=document.querySelectorAll('[data-index="0"]')
+const mens=document.querySelectorAll('[data-index="1"]')
+const home=document.querySelectorAll('[data-index="2"]')
+const lifestyle=document.querySelectorAll('[data-index="3"]')
+const beauty=document.querySelectorAll('[data-index="4"]')
 
 //Grab affinity from local storage
 fetchData=() => {

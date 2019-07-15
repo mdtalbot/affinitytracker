@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <style>
-    button {
-      height: 30px;
-      width: 30px;
-      outline: none;
-    }
-  </style>
-</head>;
+  <div class="modal-header">
+    <h1 class="logo">
+      <img class="logo-icon" src="images/150Logo.png" />
+      <span class="Affinity Tracker"></span>
+    </h1>
+  </div>
+  <div class="modal-content">
+    <div class="affinity-wrapper">
+      <ul class="affinity-list">
+        <script>
+          let affinityList = document.getElementsByClassName('affinity-list')
+          let affinityValues = chrome.storage.local.get('CSE_Challenge', function(data){
+            Object.keys(data).sort(function(a,b) {return obj[a]-obj[b]})
+          })
+
+        </script>
+
+      </ul>
+
+    </div>
+  </div>
 
 <body> <button></button> </body>
 
